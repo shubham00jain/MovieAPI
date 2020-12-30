@@ -4,7 +4,8 @@
   "description": "A api to fetch movie data from IMDB using OMDB",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web" : "server.js"
   },
   "author": "Shubham",
   "license": "ISC",
