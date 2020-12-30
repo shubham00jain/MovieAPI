@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <style>
+       
+       body{
+        background-color: #F2AA4CFF;
+       }
+       .container1{
+           height: 100vh;
+           width: 100vh;
+       }
+       input[name="movie"]{
+           width : 500px;
+           
+       }
+       .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;           
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="bg1">
+        <h1 id="head">Enter name of a movie to begin.</h1>
+    </div>
+
+
+    <div class="container1 center   " id="contain">
+            <form action="/results" method="GET" class="form-group" class="center vertical-center">
+                <input type="text" placeholder="Search by name" name="movie">
+                <input type="submit"> 
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png" alt=""></a>  <span id="copy">Copyright  &#169 2020</span> 
+    </div>
+    
+</body>
+
+</html>

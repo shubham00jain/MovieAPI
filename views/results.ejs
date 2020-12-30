@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <style>
+        #head{
+            padding-bottom : 30px;
+        }
+
+        body{
+            background-color: #F2AA4CFF;
+        }
+
+        a:link, a:visited {
+            color:#f5f2d0;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="bg1">   
+        <h1 id="head">Your search yielded these results: </h1> <br>
+        <a href="/search"> Search Again!</a>
+    </div>
+    
+    <div class="container">
+        <% for(let i=0;i< data["Search"].length ; i++){ %>
+            <% const id = data["Search"][i]["imdbID"] %>
+    
+            <% let url = "/movies?i=" + id; %>
+            <a href= <%= url %> ><li><%= data["Search"][i]["Title"]%></li></a>
+            <br>
+        <% } %>
+            
+    </div>
+    <div id="footer">
+        <a href="https://www.linkedin.com/in/shubham-jain-79b74712a/"><img id="linked" src="logos/linked.png" alt=""></a>  <span id="copy">Copyright  &#169 2020</span> 
+    </div>
+    
+</body>
+
+</html>
